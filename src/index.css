@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.drawer-side a.active {
+    color: black;
+    text-decoration: none;
+  }
+  .drawer-side a {
+    background-color: transparent;
+  }
