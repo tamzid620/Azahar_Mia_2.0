@@ -1,15 +1,16 @@
-import { useEffect } from "react";
-import { useState } from "react";
-
-
+import { useEffect , useState  } from "react";
 
 const AbedaKhatun = () => {
 
-    const [abedas, setAbedas] = useState([])
+    const [abedas, setAbedas] = useState([]);
 
     useEffect(() => {
-        fetch('')
-    }, [])
+        fetch('../json_files/abeda.json')
+          .then(res => res.json())
+          .then(data => setAbedas(data))
+      }, [])
+    
+    console.log(abedas);
 
     return (
         <div className="w-full ms-10 border  bg-gray-100 p-5 rounded-xl">

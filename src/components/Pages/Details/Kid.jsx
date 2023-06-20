@@ -7,11 +7,10 @@ const Kid = () => {
   const [kids, setKids] = useState([])
 
   useEffect(() => {
-    fetch('kids.json')
+    fetch('../json_files/kids.json')
       .then(res => res.json())
       .then(data => setKids(data))
   }, [])
-  console.log(kids);
 
   return (
     <div className="bg-gray-100 p-5 rounded-xl">
