@@ -13,6 +13,7 @@ import JulekhaKhatun from "../components/Pages/GGrandChild/JulekhaKhatun/Julekha
 import AnjumunNahar from "../components/Pages/GGrandChild/AnjumunNahar/AnjumunNahar";
 import MubarakAli from "../components/Pages/GGrandChild/MubarakAli/MubarakAli";
 import GGrandChild from "../components/Pages/GGrandChild/GGrandChild";
+import GGModal from "../components/Pages/GGrandChild/GGModal/GGModal";
 
 
 
@@ -72,7 +73,7 @@ const router = createBrowserRouter([
         {
           path: "mubarak",
           element: <MubarakAli></MubarakAli>,
-        },
+        }
       ]
   },
 ]);

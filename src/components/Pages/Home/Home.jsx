@@ -1,4 +1,5 @@
 import Banner from "./Banner/Banner";
+import BLog from "./Blog/BLog";
 import FirstDiv from "./FirstDiv/FirstDiv";
 import Gallary from "./Gallary/Gallary";
 import History from "./HomeDetails/HomeDetails";
@@ -23,6 +24,10 @@ const Home = () => {
             {/* homepage  details section  */}
             <div>
                 <History></History>
+            </div>
+            {/* aboutme section  */}
+            <div>
+                <BLog></BLog>
             </div>
 
         </div>

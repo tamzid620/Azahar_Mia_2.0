@@ -14,8 +14,8 @@ const ContactUs = () => {
       </div>
 
       <div className="my-5">
-        <h2>Phone</h2>
-        <p>Phone: +880 1852951963</p>
+        <h2>What'sapp: +8801852951963</h2>
+        <p>Phone: +8801852951963</p>
       </div>
 
       <div className="my-5">
