@@ -68,7 +68,7 @@ const SaalehAhmed = () => {
 
         <td>
           {/* ---------------- modal ------------- */}
-<label htmlFor={`my_modal_${saleh.id}`} onClick={() => setSelectedId(saleh.id)} className="btn btn-ghost btn-xs">
+<label htmlFor={`my_modal_${saleh.id}`} onClick={() => setSelectedId(saleh.id)} className="btn bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white btn-xs">
   details
   </label>
 
@@ -79,7 +79,7 @@ const SaalehAhmed = () => {
   {selectedId && (
       <>
         <h3 className="font-bold text-lg uppercase ">
-          {salehs.find(saleh => saleh.id === selectedId)?.english_name} kids info:
+          {salehs.find(saleh => saleh.id === selectedId)?.english_name} kids : 
           {salehs.find(saleh => saleh.id === selectedId)?.childrens?.length}
         </h3>
         <div>
@@ -95,7 +95,7 @@ const SaalehAhmed = () => {
       </tr>
     </thead>
     <tbody className="font-semibold ">
-        ...
+        {/* ... */}
       <tr>
         <td>1</td>
         <td>
@@ -104,6 +104,7 @@ const SaalehAhmed = () => {
         <td>{saleh?.childrens?.[0]?.grand_child_one_english}</td>
         <td>{saleh?.childrens?.[0]?.grand_child_one_bangla}</td>
       </tr>
+      {/* ...  */}
       <tr>
         <td>2</td>
         <td>
@@ -112,6 +113,34 @@ const SaalehAhmed = () => {
         <td>{saleh?.childrens?.[1]?.grand_child_two_english}</td>
         <td>{saleh?.childrens?.[1]?.grand_child_two_bangla}</td>
       </tr>
+      {/* ...  */}
+      <tr>
+        <td>3</td>
+        <td>
+          <img className="w-[75px] rounded-full" src={saleh?.childrens?.[2]?.grand_child_three_photo} alt="" />
+        </td>
+        <td>{saleh?.childrens?.[2]?.grand_child_three_english}</td>
+        <td>{saleh?.childrens?.[2]?.grand_child_three_bangla}</td>
+      </tr>
+      {/* ...  */}
+      <tr>
+        <td>4</td>
+        <td>
+          <img className="w-[75px] rounded-full" src={saleh?.childrens?.[3]?.grand_child_four_photo} alt="" />
+        </td>
+        <td>{saleh?.childrens?.[3]?.grand_child_four_english}</td>
+        <td>{saleh?.childrens?.[3]?.grand_child_four_bangla}</td>
+      </tr>
+      {/* ...  */}
+      <tr>
+        <td>5</td>
+        <td>
+          <img className="w-[75px] rounded-full" src={saleh?.childrens?.[4]?.grand_child_five_photo} alt="" />
+        </td>
+        <td>{saleh?.childrens?.[4]?.grand_child_five_english}</td>
+        <td>{saleh?.childrens?.[4]?.grand_child_five_bangla}</td>
+      </tr>
+
     </tbody>
   
   </table>

@@ -68,7 +68,7 @@ const AbedaKhatun = () => {
 
         <td>
           {/* ---------------- modal ------------- */}
-<label htmlFor={`my_modal_${abeda.id}`} onClick={() => setSelectedId(abeda.id)} className="btn btn-ghost btn-xs">
+<label htmlFor={`my_modal_${abeda.id}`} onClick={() => setSelectedId(abeda.id)} className="btn bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white btn-xs">
   details
   </label>
 
@@ -79,7 +79,7 @@ const AbedaKhatun = () => {
   {selectedId && (
       <>
         <h3 className="font-bold text-lg uppercase ">
-          {abedas.find(abeda => abeda.id === selectedId)?.english_name} kids info:
+          {abedas.find(abeda => abeda.id === selectedId)?.english_name} kids :
           {abedas.find(abeda => abeda.id === selectedId)?.childrens?.length}
         </h3>
         <div>
