@@ -12,7 +12,6 @@ const AbedaKhatun = () => {
           .then(res => res.json())
           .then(data => setAbedas(data))
       }, [])
-    console.log(abedas);
 
     return (
         <div className="w-full ms-10 border  bg-gray-100 p-5 rounded-xl">
