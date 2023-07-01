@@ -4,7 +4,9 @@ import Typewriter from 'react-ts-typewriter';
 const BLog = () => {
     return (
         <div className="my-20">
-            <h2 className="font-bold text-3xl uppercase flex justify-center mb-5">About Me</h2>
+            <h2 className="font-bold text-3xl uppercase flex justify-center mt-10">
+        About Me
+      </h2>
             <hr />
 
             <div className='flex justify-center items-center mt-10 rounded-3xl bg-gradient-to-r from-slate-300 via-stone-300 to-zinc-100 sm:relative transition-all duration-300 transform sm:hover:scale-105 hover:-translate-y-2 '>
@@ -15,7 +17,7 @@ const BLog = () => {
                     <div className='lg:w-[550px] sm:w-[350px] lg:-ms-10 sm:ms-3 font-semibold'>
                         <p>
                             <span className='text-purple-800'><Typewriter text='Assalamualikum, I am Tamzid Ull Monir .' /></span>
-                            <br /> A passionate web developer with a keen eye for web development. With a deep love for creativity and a desire to make a positive impact, I constantly strive to push the boundaries of my craft. Whether it's through captivating designs, innovative solutions, or engaging . I believe that every project is an opportunity for growth, and I approach each one with curiosity, enthusiasm, and a commitment to excellence. My goal is to create meaningful experiences that resonate with audiences and leave a lasting impression. Join me on this exciting journey as we bring ideas to life and make a difference together.
+                            <br />As a passionate programmer and JavaScript/React developer, I thrive on turning complex ideas into functional and user-friendly applications. With a solid understanding of programming principles and a strong problem-solving mindset, I enjoy tackling challenges head-on and finding innovative solutions. Constantly seeking to expand my knowledge and skill set, I am dedicated to staying up-to-date with the latest technologies and best practices in the industry. Whether it's building interactive user interfaces, implementing efficient algorithms, or collaborating with a team to deliver high-quality software, I am driven by a genuine love for coding and a desire to create impactful digital experiences..
                         </p>
                     </div>
                 </div>
