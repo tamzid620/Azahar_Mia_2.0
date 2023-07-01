@@ -13,6 +13,9 @@ import JulekhaKhatun from "../components/Pages/GGrandChild/JulekhaKhatun/Julekha
 import AnjumunNahar from "../components/Pages/GGrandChild/AnjumunNahar/AnjumunNahar";
 import MubarakAli from "../components/Pages/GGrandChild/MubarakAli/MubarakAli";
 import GGrandChild from "../components/Pages/GGrandChild/GGrandChild";
+import Login from "../components/Shared/Login/Login";
+import Register from "../components/Shared/Register/Register";
+import PrivateRoute from "./PrivateRoute";
 
 
 
@@ -32,46 +35,54 @@ const router = createBrowserRouter([
       },
       {
         path: "/details",
-        element: <Details></Details>,
+        element: <PrivateRoute><Details></Details></PrivateRoute>,
       },
       {
         path: "/kid",
-        element: <Kid></Kid>,
+        element: <PrivateRoute><Kid></Kid></PrivateRoute>,
+      },
+      {
+        path: "/login",
+        element: <Login></Login>,
+      },
+      {
+        path: "/register",
+        element: <Register></Register>,
       },
     ],
   },
   {
     path: "/dashboard",
-    element: <GGrandChild></GGrandChild>,
+    element: <PrivateRoute><GGrandChild></GGrandChild></PrivateRoute>,
     children:
       [
         {
           path: "abeda",
-          element: <AbedaKhatun></AbedaKhatun>,
+          element: <PrivateRoute><AbedaKhatun></AbedaKhatun></PrivateRoute>,
         },
         {
           path: "saaleh",
-          element: <SaalehAhmed></SaalehAhmed>,
+          element: <PrivateRoute><SaalehAhmed></SaalehAhmed></PrivateRoute>,
         },
         {
           path: "nojir",
-          element: <NojirAhmed></NojirAhmed>,
+          element: <PrivateRoute><NojirAhmed></NojirAhmed></PrivateRoute>,
         },
         {
           path: "jalal",
-          element: <JalalAhmed></JalalAhmed>,
+          element: <PrivateRoute><JalalAhmed></JalalAhmed></PrivateRoute>,
         },
         {
           path: "julakha",
-          element: <JulekhaKhatun></JulekhaKhatun>,
+          element: <PrivateRoute><JulekhaKhatun></JulekhaKhatun></PrivateRoute>,
         },
         {
           path: "anjumum",
-          element: <AnjumunNahar></AnjumunNahar>,
+          element: <PrivateRoute><AnjumunNahar></AnjumunNahar></PrivateRoute>,
         },
         {
           path: "mubarak",
-          element: <MubarakAli></MubarakAli>,
+          element: <PrivateRoute><MubarakAli></MubarakAli></PrivateRoute>,
         }
       ]
   },

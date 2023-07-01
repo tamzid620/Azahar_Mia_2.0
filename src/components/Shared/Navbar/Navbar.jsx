@@ -1,8 +1,29 @@
 import { Link } from "react-router-dom";
 import logo from '../../../../src/assets/icons/A.png';
+import { useEffect, useState } from "react";
+import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
+import app from "../../../firebase/firebase.config";
 
+const auth = getAuth();
 
 const Navbar = () => {
+
+  const [users, setUsers] = useState({});
+  useEffect (() => {
+    if (app) {
+      onAuthStateChanged(auth, (user) => {
+        setUsers(user);
+      });
+    }
+  }, [app]);
+
+  const logout = () => {
+    signOut(auth)
+      .then(() => {
+      })
+      .catch((error) => {
+      });
+  };
 
   const header =
     <>
@@ -32,11 +53,24 @@ const Navbar = () => {
             {header}
           </ul>
         </div>
-        <div className="navbar-end">
-          <button className='btn font-bold'>
-            <Link to="/details">Login</Link>
-          </button>
+
+       <div className="navbar-end flex gap-2">
+          <div className="w-10 rounded-full">
+            <img className="w-10 rounded-full" src={users?.photoURL} />
+          </div>
+          <div>
+            {
+              users ? (
+                <button onClick={() => { logout(); }} className="btn bg-zinc-600 text-white">
+                  Log out
+                </button>) : (
+                <Link to="/login">
+                  <button className="btn bg-zinc-600 text-white">Log In</button>
+                </Link>)
+            }
+          </div>
         </div>
+
       </div>
     </div>
   );
