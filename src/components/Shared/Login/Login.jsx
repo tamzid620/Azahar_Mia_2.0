@@ -49,6 +49,12 @@ Swal.fire({
         .catch((error) => {
           const errorCode = error.code;
           const errorMessage = error.message;
+           
+Swal.fire({
+  icon: 'error',
+  text: 'Please Register Before Visit!',
+  footer: '<a href="/register">Dont have account?</a>'
+})
         });
   };
   //  Google Login ----------------------------------

@@ -7,6 +7,7 @@ import useTitle from "../../../hooks/useTitle";
 const auth = getAuth();
 const Register = () => {
     useTitle('Register')
+    
 
 
     const handleSubmit = (event) => {
@@ -46,6 +47,11 @@ const Register = () => {
                 .catch((error) => {
                     const errorCode = error.code;
                     const errorMessage = error.message;
+                    Swal.fire({
+                        icon: 'error',
+                        text: 'Account Already Exist!',
+                        footer: '<a href="/login">Already have account?</a>'
+                      })
                 });
         } else {
             alert("Please Fill Email Field And Password");
@@ -55,9 +61,9 @@ const Register = () => {
 
     return (
         <div>
-            <h1 className='flex justify-center mb-20 mt-10 font-bold text-4xl text-zinc-400'>Please Login Here</h1>
+            <h1 className='flex justify-center mb-20 mt-10 font-bold text-4xl text-zinc-400'>Please Register Here</h1>
             <div className="flex justify-center ">
-                <div className="w-1/2 bg-gradient-to-br from-zinc-200 to-zinc-400 p-8 rounded-lg shadow-lg">
+                <div className="lg:w-1/2 sm: w-full bg-gradient-to-br from-zinc-200 to-zinc-400 p-8 rounded-lg shadow-lg">
                     <h2 className="text-2xl font-bold mb-6">Register</h2>
                     <form onSubmit={handleSubmit}>
                         <div className="mb-4">
