@@ -78,6 +78,10 @@ const AbedaKhatun = () => {
 
   {selectedId && (
       <>
+      <div className="flex items-center">
+      <img className="w-[100px] rounded-full" src={abeda?.photo} /> <span className="text-3xl"> + </span>
+      <img className="w-[100px] rounded-full" src={abeda?.spouse_photo} />
+      </div>
         <h3 className="font-bold text-lg uppercase ">
           {abedas.find(abeda => abeda.id === selectedId)?.english_name} kids :
           {abedas.find(abeda => abeda.id === selectedId)?.childrens?.length}

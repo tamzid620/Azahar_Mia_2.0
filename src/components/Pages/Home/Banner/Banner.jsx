@@ -21,7 +21,7 @@ const Banner = () => {
                         celebrating the rich lineage of the Azahar Mia family.</span>
                     <br />
                     <button className='btn font-bold'>
-                        <Link to="/details">Get Start </Link>
+                        <Link to="/details">Get Started </Link>
                     </button>
                 </p>
             </div>

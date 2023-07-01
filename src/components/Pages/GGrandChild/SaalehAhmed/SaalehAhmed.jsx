@@ -78,6 +78,10 @@ const SaalehAhmed = () => {
 
   {selectedId && (
       <>
+      <div className="flex items-center">
+      <img className="w-[100px] rounded-full" src={saleh?.photo} /> <span className="text-3xl"> + </span>
+      <img className="w-[100px] rounded-full" src={saleh?.spouse_photo} />
+      </div>
         <h3 className="font-bold text-lg uppercase ">
           {salehs.find(saleh => saleh.id === selectedId)?.english_name} kids : 
           {salehs.find(saleh => saleh.id === selectedId)?.childrens?.length}

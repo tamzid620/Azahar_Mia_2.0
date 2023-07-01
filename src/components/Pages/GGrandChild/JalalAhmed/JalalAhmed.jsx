@@ -80,6 +80,10 @@ const JalalAhmed = () => {
 
   {selectedId && (
       <>
+      <div className="flex items-center">
+      <img className="w-[100px] rounded-full" src={jalal?.photo} /> <span className="text-3xl"> + </span>
+      <img className="w-[100px] rounded-full" src={jalal?.spouse_photo} />
+      </div>
         <h3 className="font-bold text-lg uppercase ">
           {jalals.find(jalal => jalal.id === selectedId)?.english_name} kids : 
           {jalals.find(jalal => jalal.id === selectedId)?.childrens?.length}

@@ -14,7 +14,7 @@
           "grand_child_one_bangla": "সুমাইয়া সুলতানা"
         },
         {
-          "grand_child_two_photo": "",
+          "grand_child_two_photo": "https://i.etsystatic.com/28684825/r/il/b43416/3822262111/il_794xN.3822262111_ehf5.jpg",
           "grand_child_two_english": "Suraka Kamal",
           "grand_child_two_bangla": "সোরাকা কামাল"
         },
@@ -40,7 +40,7 @@
       "photo": "https://i.etsystatic.com/28684825/r/il/b43416/3822262111/il_794xN.3822262111_ehf5.jpg",
       "english_name": "Esmaat Aara",
       "bangla_name": "ইসমত আরা",
-      "spouse_photo": "",
+      "spouse_photo": "https://www.superfitgymconshy.com/uploads/1/3/4/6/134680505/1_orig.png",
       "spouse_e_name": "Shahazan",
       "spouse_b_name": "শাহাজান ",
       "childrens": [
@@ -53,7 +53,7 @@
     },
     {
       "id": 3,
-      "photo": "",
+      "photo": "https://www.linkpicture.com/q/borhan.jpg",
       "english_name": "Borhan Uddin",
       "bangla_name": "বোরহান  উদ্দীন",
       "spouse_photo": "https://i.etsystatic.com/28684825/r/il/b43416/3822262111/il_794xN.3822262111_ehf5.jpg",
@@ -77,17 +77,17 @@
       "photo": "https://i.etsystatic.com/28684825/r/il/b43416/3822262111/il_794xN.3822262111_ehf5.jpg",
       "english_name": "Jesmin Aktar",
       "bangla_name": "জেসমিন আক্তার",
-      "spouse_photo": "",
+      "spouse_photo": "https://www.linkpicture.com/q/noor_mohammad.jpg",
       "spouse_e_name": "Nur Muhammad Siddique",
       "spouse_b_name": "নূর মোহাম্মদ সিদ্দিকী",
       "childrens": [
         {
-          "grand_child_one_photo": "",
+          "grand_child_one_photo": "https://www.linkpicture.com/q/tahfim.jpg",
           "grand_child_one_english": "Nur Hasaan Tahfim",
           "grand_child_one_bangla": "নূর হাসান তাফহিম"
         },
         {
-          "grand_child_two_photo": "",
+          "grand_child_two_photo": "https://www.linkpicture.com/q/tafsir.jpg",
           "grand_child_two_english": "Nur Hussain Tafsir",
           "grand_child_two_bangla": "নূর হোসাইন তাফসির"
         }
@@ -95,7 +95,7 @@
     },
     {
       "id": 5,
-      "photo": "",
+      "photo": "https://www.linkpicture.com/q/riad.jpg",
       "english_name": "Riyad Uddin",
       "bangla_name": "রিয়াদ উদ্দীন",
       "spouse_photo": "https://i.etsystatic.com/28684825/r/il/b43416/3822262111/il_794xN.3822262111_ehf5.jpg",
@@ -116,7 +116,7 @@
     },
     {
       "id": 6,
-      "photo": "",
+      "photo": "https://www.linkpicture.com/q/gias.jpg",
       "english_name": "Gias Uddin",
       "bangla_name": "গিয়াস উদ্দীন",
       "spouse_photo": "https://i.etsystatic.com/28684825/r/il/b43416/3822262111/il_794xN.3822262111_ehf5.jpg",
@@ -128,12 +128,12 @@
       "photo": "https://i.etsystatic.com/28684825/r/il/b43416/3822262111/il_794xN.3822262111_ehf5.jpg",
       "english_name": "Nasrin Jahan Urmi",
       "bangla_name": "নাসরিন জাহান ঊর্মি ",
-      "spouse_photo": "",
+      "spouse_photo": "https://www.linkpicture.com/q/aman_ullah.jpg",
       "spouse_e_name": "Aaman Ullah",
       "spouse_b_name": "আমান উল্লাহ",
       "childrens": [
         {
-          "grand_child_one_photo": "",
+          "grand_child_one_photo": "https://www.superfitgymconshy.com/uploads/1/3/4/6/134680505/1_orig.png",
           "grand_child_one_english": "Abdullah Nihal",
           "grand_child_one_bangla": "আবদুল্লাহ নিহাল"
         }

@@ -79,6 +79,10 @@ details
 
 {selectedId && (
     <>
+    <div className="flex items-center">
+      <img className="w-[100px] rounded-full" src={anjumun?.photo} /> <span className="text-3xl"> + </span>
+      <img className="w-[100px] rounded-full" src={anjumun?.spouse_photo} />
+      </div>
       <h3 className="font-bold text-lg uppercase ">
         {anjumuns.find(anjumun => anjumun.id === selectedId)?.english_name} kids : 
         {anjumuns.find(anjumun => anjumun.id === selectedId)?.childrens?.length}

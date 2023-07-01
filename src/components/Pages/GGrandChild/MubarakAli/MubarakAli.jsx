@@ -79,6 +79,10 @@ details
 
 {selectedId && (
     <>
+    <div className="flex items-center">
+      <img className="w-[100px] rounded-full" src={mubarak?.photo} /> <span className="text-3xl"> + </span>
+      <img className="w-[100px] rounded-full" src={mubarak?.spouse_photo} />
+      </div>
       <h3 className="font-bold text-lg uppercase ">
         {mubaraks.find(mubarak => mubarak.id === selectedId)?.english_name} kids : 
         {mubaraks.find(mubarak => mubarak.id === selectedId)?.childrens?.length}
