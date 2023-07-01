@@ -1,9 +1,10 @@
 import { NavLink, Outlet } from "react-router-dom";
 import { FcHome , FcDataBackup ,FcBusinessman ,FcBusinesswoman } from "react-icons/fc";
+import useTitle from "../../../hooks/useTitle";
 
 
 const GGrandChild = () => {
-
+    useTitle('Dashboard')
 
     return (
         <div>

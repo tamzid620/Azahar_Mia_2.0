@@ -4,6 +4,7 @@ import { Link, useLocation, useNavigate, } from "react-router-dom";
 import {  getAuth, onAuthStateChanged, signInWithEmailAndPassword,  } from "firebase/auth";
 import app from "../../../firebase/firebase.config";
 import Swal from "sweetalert2";
+import useTitle from "../../../hooks/useTitle";
 
 const auth = getAuth();
 // const googleProvider = new GoogleAuthProvider();
@@ -12,7 +13,7 @@ const Login = () => {
 
   const navigate = useNavigate();
   const location = useLocation();
-//   useTitle('Login')
+  useTitle('Login')
   console.log(location);
 
   const from = location.state?.from?.pathname || "/";

@@ -1,6 +1,8 @@
+import useTitle from "../../../hooks/useTitle";
 
 
 const ContactUs = () => {
+  useTitle('ContactUs')
   return (
     <div>
 

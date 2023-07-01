@@ -1,9 +1,11 @@
 import { useEffect , useState  } from "react";
 import jalal_photo from "../../../../../src/assets/images/jalal_ahmed.jpg"
+import useTitle from "../../../../hooks/useTitle";
 
 
 
 const JalalAhmed = () => {
+  useTitle('JalalAhmed ')
             
     const [jalals, setJalals] = useState([]);
     const [selectedId, setSelectedId] = useState(null);

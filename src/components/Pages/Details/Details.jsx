@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
+import useTitle from "../../../hooks/useTitle";
 
 
 const Details = () => {
+    useTitle('Details')
     return (
         <div className="bg-gray-100 p-5 rounded-xl">
             <h3 className="my-20 uppercase font-semibold text-3xl flex justify-center">Azahar Mia's Details</h3>

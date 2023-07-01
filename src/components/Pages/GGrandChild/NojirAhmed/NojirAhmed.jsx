@@ -1,8 +1,10 @@
 import { useEffect , useState  } from "react";
 import nojir_photo from "../../../../../src/assets/images/nojir_ahmed.jpg"
+import useTitle from "../../../../hooks/useTitle";
 
 
 const NojirAhmed = () => {
+  useTitle('NojirAhmed')
         
     const [nojirs, setNojirs] = useState([]);
     const [selectedId, setSelectedId] = useState(null);
