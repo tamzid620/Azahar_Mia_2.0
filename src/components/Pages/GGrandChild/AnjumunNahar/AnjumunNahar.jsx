@@ -76,7 +76,7 @@ details
 </label>
 
 <input type="checkbox" id={`my_modal_${anjumun.id}`} className="modal-toggle" />
-<div className="modal text-white">
+<div className="modal text-white sm: w-1/2 lg:w-full">
 <div className="modal-box w-11/12 max-w-5xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
 
 {selectedId && (

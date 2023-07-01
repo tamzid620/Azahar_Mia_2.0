@@ -1,5 +1,6 @@
 import useTitle from "../../../hooks/useTitle";
 import Banner from "./Banner/Banner";
+import BestMember from "./BestMember/BestMember";
 import BLog from "./Blog/BLog";
 import FirstDiv from "./FirstDiv/FirstDiv";
 import Gallary from "./Gallary/Gallary";
@@ -27,6 +28,10 @@ const Home = () => {
             {/* homepage  details section  */}
             <div>
                 <History/>
+            </div>
+            {/* best member section  */}
+            <div>
+                <BestMember/>
             </div>
             {/* aboutme section  */}
             <div>

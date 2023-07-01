@@ -22,7 +22,7 @@ const Kid = () => {
         <p className="mb-2">○ <span className="font-bold text-purple-600">Azahar Mia</span> married <span className="text-green-800 font-bold">Nur Zahan Begum</span></p>
         <p className="mb-2">○ <span className="font-bold text-purple-600">Azahar Mia</span> has Four Sons and Three Daughters:</p>
         <div>
-          <div className="overflow-x-auto mt-10">
+          <div className="overflow-x-auto mt-10 ">
             <table className="table">
               <thead>
                 <tr>
