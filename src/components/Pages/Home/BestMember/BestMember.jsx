@@ -66,7 +66,7 @@ const BestMember = () => {
             </div>
           </div>
         </td>
-        <td>Nur Muhamma Siddique</td>
+        <td>Nur Mohammad Siddique</td>
         <td>নূর মোহাম্মদ সিদ্দিকী</td>
       </tr>
       {/* row 4 */}
