@@ -9,7 +9,7 @@ const History = () => {
             <hr  className="mt-10 -mb-10"/>
         <div className="shadow-xl mt-20 grid sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 p-10 gap-10 bg-gray-100 font-semibold rounded-xl hover:bg-gray-300 ">
             <div>
-                <p>Azahar Mia's family roots reach back to the late 16th century Cox-Bazar Bangladesh.   Founded by Azahar Mia, the middle-class entrepreneur, who married  Nur Zahan Begum and together they started a family which now spans over Three generations.</p>
+                <p>Azahar Mia's family roots reach back to the late 16th century Cox-Bazar Bangladesh.   Founded by Azahar Mia, the Rich Businessman,  who married  Nur Zahan Begum and together they started a family which now spans over Three generations.</p>
             </div>
 
             <div>

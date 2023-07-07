@@ -64,8 +64,8 @@ const Navbar = () => {
                 <button onClick={() => { logout(); }} className="btn bg-zinc-600 text-white">
                   Log out
                 </button>) : (
-                <Link to="/login">
-                  <button className="btn bg-zinc-600 text-white">Log In</button>
+                <Link to="/details">
+                  <button className="btn bg-zinc-600 text-white">Visit Now</button>
                 </Link>)
             }
           </div>
