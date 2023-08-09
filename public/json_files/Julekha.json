@@ -6,7 +6,19 @@
       "bangla_name": "হোসাইন আহমেদ",
       "spouse_photo": "https://i.etsystatic.com/28684825/r/il/b43416/3822262111/il_794xN.3822262111_ehf5.jpg",
       "spouse_e_name": "Rasheda Begum",
-      "spouse_b_name": "রাশেদা বেগম"
+      "spouse_b_name": "রাশেদা বেগম",
+      "childrens": [
+        {
+          "grand_child_one_photo": "https://i.etsystatic.com/28684825/r/il/b43416/3822262111/il_794xN.3822262111_ehf5.jpg",
+          "grand_child_one_english": "Mosharafa Hossen Alifa",
+          "grand_child_one_bangla": "মোশারফা হোসেন আলিফা"
+        },
+        {
+          "grand_child_two_photo": "https://i.etsystatic.com/28684825/r/il/b43416/3822262111/il_794xN.3822262111_ehf5.jpg",
+          "grand_child_two_english": "Mariam",
+          "grand_child_two_bangla": "মরিয়ম"
+        }
+      ]
     },
     {
       "id": 2,
@@ -15,7 +27,19 @@
       "bangla_name": "মোমেনা আক্তার",
       "spouse_photo": "https://www.superfitgymconshy.com/uploads/1/3/4/6/134680505/1_orig.png",
       "spouse_e_name": "Sulaimaan",
-      "spouse_b_name": "সোলাইমান"
+      "spouse_b_name": "সোলাইমান",
+      "childrens": [
+        {
+          "grand_child_one_photo": "https://www.superfitgymconshy.com/uploads/1/3/4/6/134680505/1_orig.png",
+          "grand_child_one_english": "Golam Mustafa",
+          "grand_child_one_bangla": "গোলাম আজম"
+        },
+        {
+          "grand_child_two_photo": "https://i.etsystatic.com/28684825/r/il/b43416/3822262111/il_794xN.3822262111_ehf5.jpg",
+          "grand_child_two_english": "Liza Akhter Moni",
+          "grand_child_two_bangla": "লিজা আক্তার মনি"
+        }
+      ]
     },
     {
       "id": 3,
@@ -24,7 +48,14 @@
       "bangla_name": "আরাফা তাসলিম জাহান",
       "spouse_photo": "https://www.superfitgymconshy.com/uploads/1/3/4/6/134680505/1_orig.png",
       "spouse_e_name": "Bedar",
-      "spouse_b_name": "বেদার"
+      "spouse_b_name": "বেদার",
+      "childrens": [
+        {
+          "grand_child_one_photo": "https://i.etsystatic.com/28684825/r/il/b43416/3822262111/il_794xN.3822262111_ehf5.jpg",
+          "grand_child_one_english": "Sidratul Montaha",
+          "grand_child_one_bangla": "সিদরাতুল মুনতাহা"
+        }
+      ]
     },
     {
       "id": 4,
@@ -32,8 +63,15 @@
       "english_name": "Jashim Uddin",
       "bangla_name": "জসিম উদ্দীন",
       "spouse_photo": "https://i.etsystatic.com/28684825/r/il/b43416/3822262111/il_794xN.3822262111_ehf5.jpg",
-      "spouse_e_name": "Taaslima Sultana",
-      "spouse_b_name": "তাসলিমা সুলতানা"
+      "spouse_e_name": "Taaslima Akhter",
+      "spouse_b_name": "তাসলিমা আক্তার",
+      "childrens": [
+        {
+          "grand_child_one_photo": "https://www.superfitgymconshy.com/uploads/1/3/4/6/134680505/1_orig.png",
+          "grand_child_one_english": "Mahfuzur Rahman",
+          "grand_child_one_bangla": "মাহাফুজুর রহমান"
+        }
+      ]
     },
     {
       "id": 5,
@@ -42,6 +80,13 @@
       "bangla_name": "জান্নাতুল ফেরদৌস ",
       "spouse_photo": "https://www.superfitgymconshy.com/uploads/1/3/4/6/134680505/1_orig.png",
       "spouse_e_name": "Shahab Uddin",
-      "spouse_b_name": "শাহাব উদ্দীন"
+      "spouse_b_name": "শাহাব উদ্দীন",
+      "childrens": [
+        {
+          "grand_child_one_photo": "https://www.superfitgymconshy.com/uploads/1/3/4/6/134680505/1_orig.png",
+          "grand_child_one_english": "Yeasin Arafat",
+          "grand_child_one_bangla": "ইয়াসিন আরাফাত"
+        }
+      ]
     }
   ]
