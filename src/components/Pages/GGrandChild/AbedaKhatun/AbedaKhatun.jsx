@@ -117,6 +117,30 @@ const AbedaKhatun = () => {
         <td>{abeda?.childrens?.[1]?.grand_child_two_english}</td>
         <td>{abeda?.childrens?.[1]?.grand_child_two_bangla}</td>
       </tr>
+      <tr>
+        <td>3</td>
+        <td>
+          <img className="w-[75px] rounded-full" src={abeda?.childrens?.[2]?.grand_child_three_photo} alt="" />
+        </td>
+        <td>{abeda?.childrens?.[2]?.grand_child_three_english}</td>
+        <td>{abeda?.childrens?.[2]?.grand_child_three_bangla}</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>
+          <img className="w-[75px] rounded-full" src={abeda?.childrens?.[3]?.grand_child_four_photo} alt="" />
+        </td>
+        <td>{abeda?.childrens?.[3]?.grand_child_four_english}</td>
+        <td>{abeda?.childrens?.[3]?.grand_child_four_bangla}</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>
+          <img className="w-[75px] rounded-full" src={abeda?.childrens?.[4]?.grand_child_five_photo} alt="" />
+        </td>
+        <td>{abeda?.childrens?.[4]?.grand_child_five_english}</td>
+        <td>{abeda?.childrens?.[4]?.grand_child_five_bangla}</td>
+      </tr>
     </tbody>
   
   </table>

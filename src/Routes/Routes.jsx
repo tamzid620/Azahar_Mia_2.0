@@ -35,11 +35,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/details",
-        element: <PrivateRoute><Details></Details></PrivateRoute>,
+        element: <Details></Details>,
       },
       {
         path: "/kid",
-        element: <PrivateRoute><Kid></Kid></PrivateRoute>,
+        element: <Kid></Kid>,
       },
       {
         path: "/login",
@@ -53,36 +53,36 @@ const router = createBrowserRouter([
   },
   {
     path: "/dashboard",
-    element: <PrivateRoute><GGrandChild></GGrandChild></PrivateRoute>,
+    element: <GGrandChild></GGrandChild>,
     children:
       [
         {
           path: "abeda",
-          element: <PrivateRoute><AbedaKhatun></AbedaKhatun></PrivateRoute>,
+          element: <AbedaKhatun></AbedaKhatun>,
         },
         {
           path: "saaleh",
-          element: <PrivateRoute><SaalehAhmed></SaalehAhmed></PrivateRoute>,
+          element: <SaalehAhmed></SaalehAhmed>,
         },
         {
           path: "nojir",
-          element: <PrivateRoute><NojirAhmed></NojirAhmed></PrivateRoute>,
+          element:<NojirAhmed></NojirAhmed>,
         },
         {
           path: "jalal",
-          element: <PrivateRoute><JalalAhmed></JalalAhmed></PrivateRoute>,
+          element: <JalalAhmed></JalalAhmed>,
         },
         {
           path: "julakha",
-          element: <PrivateRoute><JulekhaKhatun></JulekhaKhatun></PrivateRoute>,
+          element: <JulekhaKhatun></JulekhaKhatun>,
         },
         {
           path: "anjumum",
-          element: <PrivateRoute><AnjumunNahar></AnjumunNahar></PrivateRoute>,
+          element: <AnjumunNahar></AnjumunNahar>,
         },
         {
           path: "mubarak",
-          element: <PrivateRoute><MubarakAli></MubarakAli></PrivateRoute>,
+          element: <MubarakAli></MubarakAli>,
         }
       ]
   },
