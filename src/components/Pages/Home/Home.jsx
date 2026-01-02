@@ -31,7 +31,7 @@ const Home = () => {
             </div>
             {/* best member section  */}
             <div>
-                <BestMember/>
+                {/* <BestMember/> */}
             </div>
             {/* aboutme section  */}
             <div>
