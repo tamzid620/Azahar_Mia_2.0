@@ -6,3 +6,7 @@
 • Node.Js tailwind
 • React, Vite,
 • Netlify, ReactIcons, SweetAlert, etc...
+
+🧬 Recommended Libraries for Family Tree in React
+1. react-d3-tree
+2. family-chart
