@@ -55,8 +55,8 @@ const Navbar = () => {
         </div>
 
        <div className="navbar-end flex gap-2">
-          {/* <div className="w-10 rounded-full">
-            <img className="w-10 rounded-full" src={users?.photoURL} />
+          {/* <div className="w-10 rounded-sm">
+            <img className="w-10 rounded-sm" src={users?.photoURL} />
           </div> */}
           <div>
             {/* {

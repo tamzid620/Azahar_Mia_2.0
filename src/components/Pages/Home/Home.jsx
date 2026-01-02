@@ -35,7 +35,7 @@ const Home = () => {
             </div>
             {/* aboutme section  */}
             <div>
-                <BLog/>
+                {/* <BLog/> */}
             </div>
             {/* spcial thanks section  */}
             <div>

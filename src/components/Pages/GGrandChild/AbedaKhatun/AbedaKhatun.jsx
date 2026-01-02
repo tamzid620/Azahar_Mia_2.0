@@ -18,7 +18,7 @@ const AbedaKhatun = () => {
     return (
         <div className="w-full ms-10 border  bg-gray-100 p-5 rounded-xl">
           <div className="flex justify-center">
-          <img className="w-[120px] -mb-12 rounded-full " src={abeda_photo} alt="" />
+          <img className="w-[120px] -mb-12 rounded-sm " src={abeda_photo} alt="" />
           </div>
             <h3 className="my-20 uppercase font-semibold text-3xl flex justify-center">Abeda Khatun's Info</h3>
             <hr className="-mt-14 mb-10" />
@@ -70,19 +70,19 @@ const AbedaKhatun = () => {
 
         <td>
           {/* ---------------- modal ------------- */}
-<label htmlFor={`my_modal_${abeda.id}`} onClick={() => setSelectedId(abeda.id)} className="btn bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white btn-xs">
+<label htmlFor={`my_modal_${abeda.id}`} onClick={() => setSelectedId(abeda.id)} className="btn bg-gradient-to-r from-gray-500 via-slate-500 to-zinc-500 text-white btn-xs">
   details
   </label>
 
 <input type="checkbox" id={`my_modal_${abeda.id}`} className="modal-toggle" />
 <div className="modal text-white sm: w-1/2 lg:w-full">
-  <div className="modal-box w-11/12 max-w-5xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+  <div className="modal-box w-11/12 max-w-5xl bg-gradient-to-r from-gray-500 via-slate-500 to-zinc-500">
 
   {selectedId && (
       <>
       <div className="flex items-center">
-      <img className="w-[100px] rounded-full" src={abeda?.photo} /> <span className="text-3xl"> + </span>
-      <img className="w-[100px] rounded-full" src={abeda?.spouse_photo} />
+      <img className="w-[100px] rounded-sm" src={abeda?.photo} /> <span className="text-3xl"> + </span>
+      <img className="w-[100px] rounded-sm" src={abeda?.spouse_photo} />
       </div>
         <h3 className="font-bold text-lg uppercase ">
           {abedas.find(abeda => abeda.id === selectedId)?.english_name} kids :
@@ -104,7 +104,7 @@ const AbedaKhatun = () => {
       <tr>
         <td>1</td>
         <td>
-          <img className="w-[75px] rounded-full" src={abeda?.childrens?.[0]?.grand_child_one_photo} alt="" />
+          <img className="w-[75px] rounded-sm" src={abeda?.childrens?.[0]?.grand_child_one_photo} alt="" />
         </td>
         <td>{abeda?.childrens?.[0]?.grand_child_one_english}</td>
         <td>{abeda?.childrens?.[0]?.grand_child_one_bangla}</td>
@@ -112,7 +112,7 @@ const AbedaKhatun = () => {
       <tr>
         <td>2</td>
         <td>
-          <img className="w-[75px] rounded-full" src={abeda?.childrens?.[1]?.grand_child_two_photo} alt="" />
+          <img className="w-[75px] rounded-sm" src={abeda?.childrens?.[1]?.grand_child_two_photo} alt="" />
         </td>
         <td>{abeda?.childrens?.[1]?.grand_child_two_english}</td>
         <td>{abeda?.childrens?.[1]?.grand_child_two_bangla}</td>
@@ -120,7 +120,7 @@ const AbedaKhatun = () => {
       <tr>
         <td>3</td>
         <td>
-          <img className="w-[75px] rounded-full" src={abeda?.childrens?.[2]?.grand_child_three_photo} alt="" />
+          <img className="w-[75px] rounded-sm" src={abeda?.childrens?.[2]?.grand_child_three_photo} alt="" />
         </td>
         <td>{abeda?.childrens?.[2]?.grand_child_three_english}</td>
         <td>{abeda?.childrens?.[2]?.grand_child_three_bangla}</td>
@@ -128,7 +128,7 @@ const AbedaKhatun = () => {
       <tr>
         <td>4</td>
         <td>
-          <img className="w-[75px] rounded-full" src={abeda?.childrens?.[3]?.grand_child_four_photo} alt="" />
+          <img className="w-[75px] rounded-sm" src={abeda?.childrens?.[3]?.grand_child_four_photo} alt="" />
         </td>
         <td>{abeda?.childrens?.[3]?.grand_child_four_english}</td>
         <td>{abeda?.childrens?.[3]?.grand_child_four_bangla}</td>
@@ -136,7 +136,7 @@ const AbedaKhatun = () => {
       <tr>
         <td>5</td>
         <td>
-          <img className="w-[75px] rounded-full" src={abeda?.childrens?.[4]?.grand_child_five_photo} alt="" />
+          <img className="w-[75px] rounded-sm" src={abeda?.childrens?.[4]?.grand_child_five_photo} alt="" />
         </td>
         <td>{abeda?.childrens?.[4]?.grand_child_five_english}</td>
         <td>{abeda?.childrens?.[4]?.grand_child_five_bangla}</td>

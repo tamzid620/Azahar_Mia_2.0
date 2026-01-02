@@ -7,7 +7,7 @@ const SpecialThanks = () => {
         Special Thanks
       </h2>
       <div className="divider"></div>
-      <div className='flex justify-center items-center mt-10 rounded-3xl bg-gradient-to-r from-slate-300 via-stone-300 to-zinc-100 sm:relative transition-all duration-300 transform sm:hover:scale-105 hover:-translate-y-2 p-5 font-semibold text-lg'>
+      <div className='flex justify-center items-center mt-10 rounded-sm  p-5 font-semibold text-lg'>
       <div style={{ alignItems: "center", justifyContent: "center" }} className='grid sm:grid-cols-1 lg:grid-cols-2'>
         <div className='me-3'><img className='rounded-lg' src={thanks} alt="" /></div>
         <div>
