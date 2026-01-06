@@ -1,6 +1,6 @@
 // components/Navbar.jsx
 import { useState, useEffect } from "react";
-import logo from "../../../../src/assets/icons/A-removebg-preview.png";
+import logo from "../../../../src/assets/icons/Copilot_20260106_225030-removebg-preview.jpg.png";
 import { toast, ToastContainer, Zoom } from "react-toastify";
 
 const links = [
@@ -39,10 +39,10 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 inset-x-0 z-50 transition-colors ${
+      className={`font-montserrat fixed top-0 inset-x-0 z-50 transition-colors ${
         scrolled
-          ? "bg-white/90 backdrop-blur shadow-sm dark:bg-gray-900/90"
-          : "bg-transparent text-white"
+          ? "backdrop-blur shadow-sm "
+          : "bg-gradient-to-r from-[#1a1f36] to-[#2e3a59] "
       }`}
     >
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -61,17 +61,15 @@ export default function Navbar() {
                 onClick={(e) =>
                   link.underConstruction ? handleUnderConstruction(e) : null
                 }
-                className={` text-sm font-medium  hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-400 transition-colors ${
-                  scrolled ? "text-gray-700" : "bg-transparent text-white"
-                }`}
-              >
+                className={` text-sm font-semibold  hover:text-yellow-600 dark:text-gray-300 dark:hover:text-yellow-400 transition-colors  text-white `}>
                 {link.name}
               </a>
             ))}
 
             <a
               href="#get-started"
-              className="rounded-lg bg-blue-950 px-4 py-2 text-sm font-semibold text-white hover:bg-indigo-700 shadow-sm"
+              className="rounded-lg bg-blue-950 px-4 py-2 text-sm font-semibold
+                hover:bg-indigo-700 shadow-sm  bg-gradient-to-r from-[#f6c90e] to-[#f4b400] text-[#1a1f36] hover:from-[#f4b400] hover:to-[#f6c90e] transition duration-300"
             >
               Get started
             </a>
@@ -126,7 +124,7 @@ export default function Navbar() {
                   setOpen(false);
                 }
               }}
-              className="block rounded-md px-3 py-2 text-base font-medium text-gray-800 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-800"
+              className="block rounded-md px-3 py-2 text-base font-semibold text-gray-800 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-800"
             >
               {link.name}
             </a>
@@ -135,7 +133,7 @@ export default function Navbar() {
           <a
             href="#get-started"
             onClick={() => setOpen(false)}
-            className="block rounded-md px-3 py-2 text-base font-semibold text-white bg-blue-950 hover:bg-indigo-700"
+            className="block rounded-md px-3 py-2  bg-gradient-to-r from-[#f6c90e] to-[#f4b400] text-[#1a1f36] font-semibold  shadow-lg hover:from-[#f4b400] hover:to-[#f6c90e] transition duration-300"
           >
             Get started
           </a>

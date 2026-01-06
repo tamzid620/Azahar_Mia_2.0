@@ -9,3 +9,24 @@
   .drawer-side a {
     background-color: transparent;
   }
+
+  body{
+    /* background: #1a1f36; */
+    /* background: #2e3a59; */
+    background: linear-gradient(to left ,#2e3a59 , #1a1f36);
+    color: white
+  }
+
+@font-face {
+  font-family: 'Airstrike';
+  src: url('./assets/fonts/airstrike/airstrikeexpand.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Planet Kosmos';
+  src: url('./assets/fonts/planet_kosmos/PLANK___.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+

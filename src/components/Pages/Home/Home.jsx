@@ -4,6 +4,7 @@ import BestMember from "./BestMember/BestMember";
 import BLog from "./Blog/BLog";
 import FirstDiv from "./FirstDiv/FirstDiv";
 import Gallary from "./Gallary/Gallary";
+import HeroSection from "./HeroSection/HeroSection";
 import History from "./HomeDetails/HomeDetails";
 import SpecialThanks from "./SpecialThanks/SpecialThanks";
 
@@ -15,7 +16,8 @@ const Home = () => {
 
             {/* homepage banner section  */}
             <div>
-                <Banner/>
+                {/* <Banner/> */}
+                <HeroSection/>
             </div>
             {/* homepage  first div section  */}
             <div >
