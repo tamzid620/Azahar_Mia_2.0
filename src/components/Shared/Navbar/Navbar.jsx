@@ -1,80 +1,147 @@
-import { Link } from "react-router-dom";
-import logo from '../../../../src/assets/icons/A.png';
-// import { useEffect, useState } from "react";
-// import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
-// import app from "../../../firebase/firebase.config";
+// components/Navbar.jsx
+import { useState, useEffect } from "react";
+import logo from "../../../../src/assets/icons/A-removebg-preview.png";
+import { toast, ToastContainer, Zoom } from "react-toastify";
 
-// const auth = getAuth();
+const links = [
+  { name: "Home", href: "#home", underConstruction: false },
+  { name: "About", href: "#about", underConstruction: true },
+  { name: "Gallery", href: "#gallery", underConstruction: true },
+  { name: "Features", href: "#features", underConstruction: true },
+  { name: "Contact", href: "#contact", underConstruction: false },
+];
 
-const Navbar = () => {
+export default function Navbar() {
+  const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
-  // const [users, setUsers] = useState({});
-  // useEffect (() => {
-  //   if (app) {
-  //     onAuthStateChanged(auth, (user) => {
-  //       setUsers(user);
-  //     });
-  //   }
-  // }, [app]);
+  const handleUnderConstruction = (e) => {
+    e.preventDefault();
+    toast.info("Feature in progress!", {
+      position: "top-center",
+      autoClose: 300,
+      hideProgressBar: false,
+      closeOnClick: false,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      transition: Zoom,
+    });
+  };
 
-  // const logout = () => {
-  //   signOut(auth)
-  //     .then(() => {
-  //     })
-  //     .catch((error) => {
-  //     });
-  // };
-
-  const header =
-    <>
-      <Link to="/"><li className="font-bold"><a>Home</a></li></Link>
-      <Link to="/details"><li className="font-bold"><a>AllDetails</a></li></Link>
-      <Link to="/contactus"><li className="font-bold"><a>ContactUs</a></li></Link>
-    </>
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 8);
+    onScroll();
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
-    <div>
-      <div className="navbar bg-base-100">
-        <div className="navbar-start">
-          <div className="dropdown">
-            <label tabIndex={0} className="btn btn-ghost lg:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-            </label>
-            <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-              {header}
-            </ul>
+    <header
+      className={`fixed top-0 inset-x-0 z-50 transition-colors ${
+        scrolled
+          ? "bg-white/90 backdrop-blur shadow-sm dark:bg-gray-900/90"
+          : "bg-transparent text-white"
+      }`}
+    >
+      <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="flex h-16 items-center justify-between">
+          {/* Brand */}
+          <a href="/" className="flex items-center gap-2">
+            <img className="w-[60px]" src={logo} alt="Logo" />
+          </a>
+
+          {/* Desktop links */}
+          <div className="hidden md:flex items-center gap-6">
+            {links.map((link) => (
+              <a
+                key={link.name}
+                href={link.href}
+                onClick={(e) =>
+                  link.underConstruction ? handleUnderConstruction(e) : null
+                }
+                className={` text-sm font-medium  hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-400 transition-colors ${
+                  scrolled ? "text-gray-700" : "bg-transparent text-white"
+                }`}
+              >
+                {link.name}
+              </a>
+            ))}
+
+            <a
+              href="#get-started"
+              className="rounded-lg bg-blue-950 px-4 py-2 text-sm font-semibold text-white hover:bg-indigo-700 shadow-sm"
+            >
+              Get started
+            </a>
           </div>
 
-          <img className="w-[60px]" src={logo} alt="" />
-
+          {/* Mobile toggle */}
+          <button
+            onClick={() => setOpen((v) => !v)}
+            aria-label="Toggle menu"
+            className="md:hidden inline-flex items-center justify-center rounded-md p-2 text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-800"
+          >
+            <svg
+              className="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+            >
+              {open ? (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              ) : (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              )}
+            </svg>
+          </button>
         </div>
-        <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-            {header}
-          </ul>
-        </div>
+      </nav>
 
-       <div className="navbar-end flex gap-2">
-          {/* <div className="w-10 rounded-sm">
-            <img className="w-10 rounded-sm" src={users?.photoURL} />
-          </div> */}
-          <div>
-            {/* {
-              users ? (
-                <button onClick={() => { logout(); }} className="btn bg-zinc-600 text-white">
-                  Log out
-                </button>) : (
-                )
-            } */}
-                <Link to="/details">
-                  <button className="btn bg-zinc-600 text-white">Visit Now</button>
-                </Link>
-          </div>
+      {/* Mobile menu */}
+      <div
+        className={`md:hidden transition-all ${
+          open ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+        } overflow-hidden`}
+      >
+        <div className="mx-auto max-w-7xl px-4 pb-4 space-y-1">
+          {links.map((link) => (
+            <a
+              key={link.name}
+              href={link.href}
+              onClick={(e) => {
+                if (link.underConstruction) {
+                  handleUnderConstruction(e);
+                } else {
+                  setOpen(false);
+                }
+              }}
+              className="block rounded-md px-3 py-2 text-base font-medium text-gray-800 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-800"
+            >
+              {link.name}
+            </a>
+          ))}
+          <div className="border-t border-gray-200 dark:border-gray-700 my-2" />
+          <a
+            href="#get-started"
+            onClick={() => setOpen(false)}
+            className="block rounded-md px-3 py-2 text-base font-semibold text-white bg-blue-950 hover:bg-indigo-700"
+          >
+            Get started
+          </a>
         </div>
-
       </div>
-    </div>
+      <ToastContainer />
+    </header>
   );
-};
-
-export default Navbar;
+}
