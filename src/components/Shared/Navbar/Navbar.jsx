@@ -61,7 +61,7 @@ export default function Navbar() {
                 onClick={(e) =>
                   link.underConstruction ? handleUnderConstruction(e) : null
                 }
-                className={` text-sm font-semibold  hover:text-yellow-600 dark:text-gray-300 dark:hover:text-yellow-400 transition-colors  text-white `}>
+                className={` text-sm font-semibold  hover:text-light_yellow dark:text-gray-300 dark:hover:text-yellow-400 transition-colors  text-white `}>
                 {link.name}
               </a>
             ))}
@@ -69,7 +69,7 @@ export default function Navbar() {
             <a
               href="#get-started"
               className="rounded-lg bg-blue-950 px-4 py-2 text-sm font-semibold
-                hover:bg-indigo-700 shadow-sm  bg-gradient-to-r from-[#f6c90e] to-[#f4b400] text-[#1a1f36] hover:from-[#f4b400] hover:to-[#f6c90e] transition duration-300"
+                hover:bg-indigo-700 shadow-sm  bg-gradient-to-r from-[#f6c90e] to-[#f4b400] text-black hover:from-[#f4b400] hover:to-[#f6c90e] transition duration-300"
             >
               Get started
             </a>
@@ -133,7 +133,7 @@ export default function Navbar() {
           <a
             href="#get-started"
             onClick={() => setOpen(false)}
-            className="block rounded-md px-3 py-2  bg-gradient-to-r from-[#f6c90e] to-[#f4b400] text-[#1a1f36] font-semibold  shadow-lg hover:from-[#f4b400] hover:to-[#f6c90e] transition duration-300"
+            className="block rounded-md px-3 py-2  bg-gradient-to-r from-[#f6c90e] to-[#f4b400] text-black font-semibold  shadow-lg hover:from-[#f4b400] hover:to-[#f6c90e] transition duration-300"
           >
             Get started
           </a>
