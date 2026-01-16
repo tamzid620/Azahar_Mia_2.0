@@ -27,27 +27,27 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home></Home>,
+        element: <Home/>,
       },
       {
         path: "/contactus",
-        element: <ContactUs></ContactUs>,
+        element: <ContactUs/>,
       },
       {
         path: "/details",
-        element: <Details></Details>,
+        element: <Details/>,
       },
       {
         path: "/kid",
-        element: <Kid></Kid>,
+        element: <Kid/>,
       },
       {
         path: "/login",
-        element: <Login></Login>,
+        element: <Login/>,
       },
       {
         path: "/register",
-        element: <Register></Register>,
+        element: <Register/>,
       },
     ],
   },

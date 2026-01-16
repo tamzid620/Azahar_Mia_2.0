@@ -13,7 +13,6 @@ const Home = () => {
 
     return (
         <div>
-
             {/* homepage banner section  */}
             <div>
                 {/* <Banner/> */}
@@ -21,7 +20,7 @@ const Home = () => {
             </div>
             {/* homepage  first div section  */}
             <div >
-                <FirstDiv/>
+                {/* <FirstDiv/> */}
             </div>
             {/* PREVIEW SECTION  */}
             <div>
@@ -29,7 +28,7 @@ const Home = () => {
             </div>
             {/* homepage  details section  */}
             <div>
-                <History/>
+                {/* <History/> */}
             </div>
             {/* best member section  */}
             <div>

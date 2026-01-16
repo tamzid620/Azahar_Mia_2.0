@@ -8,7 +8,7 @@ const links = [
   { name: "About", href: "#about", underConstruction: true },
   { name: "Gallery", href: "#gallery", underConstruction: true },
   { name: "Features", href: "#features", underConstruction: true },
-  { name: "Contact", href: "#contact", underConstruction: false },
+  { name: "Contact", href: "/contactus", underConstruction: false },
 ];
 
 export default function Navbar() {
@@ -69,7 +69,7 @@ export default function Navbar() {
             <a
               href="#get-started"
               className="rounded-lg bg-blue-950 px-4 py-2 text-sm font-semibold
-                hover:bg-indigo-700 shadow-sm  bg-gradient-to-r from-[#f6c90e] to-[#f4b400] text-black hover:from-[#f4b400] hover:to-[#f6c90e] transition duration-300"
+                hover:bg-indigo-700 shadow-sm  bg-gradient-to-r from-[#64748b] to-[#0ea5e9] text-white hover:from-[#0ea5e9] hover:to-[#64748b] transition duration-300"
             >
               Get started
             </a>
@@ -133,7 +133,7 @@ export default function Navbar() {
           <a
             href="#get-started"
             onClick={() => setOpen(false)}
-            className="block rounded-md px-3 py-2  bg-gradient-to-r from-[#f6c90e] to-[#f4b400] text-black font-semibold  shadow-lg hover:from-[#f4b400] hover:to-[#f6c90e] transition duration-300"
+            className="block rounded-md px-3 py-2  bg-gradient-to-r from-[#64748b] to-[#0ea5e9] text-white font-semibold  shadow-lg hover:from-[#0ea5e9] hover:to-[#64748b] transition duration-300"
           >
             Get started
           </a>

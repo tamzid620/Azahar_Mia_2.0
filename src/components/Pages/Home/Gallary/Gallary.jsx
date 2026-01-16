@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import Swal from "sweetalert2";
 
 const Gallary = () => {
-  const [likeCount, setLikeCount] = useState(158);
-  const [isLiked, setIsLiked] = useState(false);
+  // const [likeCount, setLikeCount] = useState(158);
+  // const [isLiked, setIsLiked] = useState(false);
   // const [views, setViews] = useState(0);
 
   // useEffect(() => {
@@ -12,21 +12,22 @@ const Gallary = () => {
   //     .then(data => setViews(data.value));
   // }, []);
 
-  const handleLikeClick = () => {
-    if (!isLiked) {
-      setLikeCount(likeCount + 1);
-      setIsLiked(true);
-      Swal.fire({
-        icon: 'success',
-        title: 'Add Like Successfully',
-        showConfirmButton: false,
-        timer: 1500
-      })
-    }
-  };
+  // const handleLikeClick = () => {
+  //   if (!isLiked) {
+  //     setLikeCount(likeCount + 1);
+  //     setIsLiked(true);
+  //     Swal.fire({
+  //       icon: "success",
+  //       title: "Add Like Successfully",
+  //       showConfirmButton: false,
+  //       timer: 1500,
+  //     });
+  //   }
+  // };
 
   return (
     <div>
+      {/* <div>
       <h2 className="font-bold text-3xl uppercase flex justify-center mt-10">
         Preview Section
       </h2>
@@ -63,6 +64,48 @@ const Gallary = () => {
         </div>
       </div>
 
+    </div> */}
+      <div>
+        {/* About section  */}
+        <section className="py-16  bg-gradient-to-l from-primary_color to-secondary_color text-white">
+          <div className="container mx-auto text-center max-w-2xl">
+            <h2 className="text-3xl font-bold mb-4">About Our Family Tree</h2>
+            <p className="text-gray-100">
+              This website helps you visualize generations, preserve memories,
+              and share stories with loved ones.
+            </p>
+          </div>
+        </section>
+        {/* Interactive Tree section */}
+        <section className="py-16 px-0 md:px-5 lg:px-5 bg-gradient-to-l from-primary_color to-secondary_color">
+          <div className="container mx-auto grid md:grid-cols-3 gap-8 text-center">
+            {[
+              {
+                title: "Interactive Tree",
+                description:
+                  "Navigate generations with a dynamic family tree view.",
+              },
+              {
+                title: "Photo Gallery",
+                description: "Preserve and share family memories in one place.",
+              },
+              {
+                title: "Timeline",
+                description:
+                  "Track important family events across generations.",
+              },
+            ].map((feature) => (
+              <div
+                key={feature.title}
+                className="p-6 bg-gradient-to-r from-[#64748b] to-[#0ea5e9] text-white font-semibold shadow-lg rounded-lg hover:shadow-xl transition duration-300"
+              >
+                <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
+                <p className="text-indigo-100">{feature.description}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      </div>
     </div>
   );
 };
