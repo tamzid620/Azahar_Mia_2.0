@@ -7,6 +7,7 @@ export default {
         airstrike: ["Airstrike", "sans-serif"],
         kosmos: ['"Planet Kosmos"', 'sans-serif'],
         montserrat: ['Montserrat', 'sans-serif'],
+        wanted: ['Wanted'],
        },
         colors: {
         primary_color: "#2e3a59",

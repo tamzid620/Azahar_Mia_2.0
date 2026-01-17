@@ -4,11 +4,11 @@ import logo from "../../../../src/assets/icons/Copilot_20260106_225030-removebg-
 import { toast, ToastContainer, Zoom } from "react-toastify";
 
 const links = [
-  { name: "Home", href: "#home", underConstruction: false },
+  { name: "Home", href: "/", underConstruction: false },
   { name: "About", href: "#about", underConstruction: true },
   { name: "Gallery", href: "#gallery", underConstruction: true },
   { name: "Features", href: "#features", underConstruction: true },
-  { name: "Contact", href: "/contactus", underConstruction: false },
+  { name: "Contact", href: "#contactUs", underConstruction: false },
 ];
 
 export default function Navbar() {
@@ -68,8 +68,9 @@ export default function Navbar() {
 
             <a
               href="#get-started"
-              className="rounded-lg bg-blue-950 px-4 py-2 text-sm font-semibold
-                hover:bg-indigo-700 shadow-sm  bg-gradient-to-r from-[#64748b] to-[#0ea5e9] text-white hover:from-[#0ea5e9] hover:to-[#64748b] transition duration-300"
+              className="rounded-lg px-4 py-2 text-sm font-semibold
+                 shadow-sm  bg-gradient-to-b from-[#64748b] to-transparent text-white hover:from-transparent
+                  hover:to-[#64748b] transition duration-300"
             >
               Get started
             </a>

@@ -1,4 +1,5 @@
 import useTitle from "../../../hooks/useTitle";
+import ContactUs from "../ContactUs/ContactUs";
 import Banner from "./Banner/Banner";
 import BestMember from "./BestMember/BestMember";
 import BLog from "./Blog/BLog";
@@ -41,6 +42,9 @@ const Home = () => {
             {/* spcial thanks section  */}
             <div>
                 <SpecialThanks/>
+            </div>
+            <div>
+                <ContactUs/>
             </div>
 
         </div>

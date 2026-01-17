@@ -5,7 +5,7 @@ import github from "../../../../src/assets/icons/github.png";
 
 const Footer = () => {
   return (
-    <div className="bg-gradient-to-r from-[#64748b] to-[#0ea5e9] text-white font-semibold  shadow-lg hover:from-[#f4b400] hover:to-[#f6c90e] transition duration-300 py-8 px-5">
+    <div className="bg-[#64748b] text-white font-semibold py-8 px-5">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
         <p className="mb-4 md:mb-0">
           &copy; 2026 Family Tree. All rights reserved.

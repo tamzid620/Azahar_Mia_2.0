@@ -25,7 +25,7 @@ const handleSubmit = (e) => {
         
         {/* Left Section - Contact Info */}
         <div className="space-y-6 text-white">
-          <h1 className="text-4xl font-bold font-airstrike mb-6 text-[#0ea5e9]">Get in Touch</h1>
+          <h1 className="text-4xl font-bold mb-6 text-[#0ea5e9] uppercase">Get in Touch</h1>
           <p className="text-lg font-montserrat mb-8">
             We’d love to hear from you! Reach out through any of the channels below or send us a message directly.
           </p>
