@@ -4,7 +4,7 @@ const HeroSection = () => {
   return (
     <section className="relative bg-gradient-to-r from-[#171a2a] to-[#35446b] text-white pt-48 pb-32">
       <div className="container mx-auto text-center">
-        <h1 className="text-4xl font-bold uppercase" >
+        <h1 className="text-4xl font-bold uppercase text-[#0ea5e9]" >
           Discover Your Family Roots
         </h1>
         <p className="text-lg my-2 text-para_color  font-semibold font-montserrat">
