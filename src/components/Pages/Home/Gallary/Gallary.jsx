@@ -26,10 +26,9 @@ const Gallary = () => {
   // };
 
   return (
-    <div>
       <div>
         {/* About section  */}
-        <section className="py-16  bg-gradient-to-l from-primary_color to-secondary_color text-white">
+        <section id="about" className="py-16  bg-gradient-to-l from-primary_color to-secondary_color text-white">
           <div className="container mx-auto text-center max-w-2xl">
             <h2 className="text-3xl font-bold mb-4 uppercase text-[#0ea5e9]">About Our Family Tree</h2>
             <p className="text-gray-100 font-montserrat">
@@ -68,7 +67,6 @@ const Gallary = () => {
           </div>
         </section>
       </div>
-    </div>
   );
 };
 
