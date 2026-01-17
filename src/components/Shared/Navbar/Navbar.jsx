@@ -6,8 +6,8 @@ import { toast, ToastContainer, Zoom } from "react-toastify";
 const links = [
   { name: "Home", href: "/", underConstruction: false },
   { name: "About", href: "#about", underConstruction: true },
-  { name: "Gallery", href: "#gallery", underConstruction: true },
-  { name: "Features", href: "#features", underConstruction: true },
+  // { name: "Gallery", href: "#gallery", underConstruction: true },
+  // { name: "Features", href: "#features", underConstruction: true },
   { name: "Contact", href: "#contactUs", underConstruction: false },
 ];
 
@@ -67,7 +67,7 @@ export default function Navbar() {
             ))}
 
             <a
-              href="#get-started"
+              href="/details"
               className="rounded-lg px-4 py-2 text-sm font-semibold
                  shadow-sm  bg-gradient-to-b from-[#64748b] to-transparent text-white hover:from-transparent
                   hover:to-[#64748b] transition duration-300"
@@ -132,7 +132,7 @@ export default function Navbar() {
           ))}
           <div className="border-t border-gray-200 dark:border-gray-700 my-2" />
           <a
-            href="#get-started"
+            href="/details"
             onClick={() => setOpen(false)}
             className="block rounded-md px-3 py-2  bg-gradient-to-r from-[#64748b] to-[#0ea5e9] text-white font-semibold  shadow-lg hover:from-[#0ea5e9] hover:to-[#64748b] transition duration-300"
           >
