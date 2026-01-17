@@ -4,7 +4,7 @@ import logo from "../../../../src/assets/icons/Copilot_20260106_225030-removebg-
 import { toast, ToastContainer, Zoom } from "react-toastify";
 
 const links = [
-  { name: "Home", href: "#/", underConstruction: false },
+  { name: "Home", href: "/", underConstruction: false },
   { name: "About", href: "#about", underConstruction: false },
   { name: "Contact", href: "#contactUs", underConstruction: false },
 ];

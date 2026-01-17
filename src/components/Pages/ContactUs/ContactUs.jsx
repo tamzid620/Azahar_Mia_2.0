@@ -1,39 +1,55 @@
 import useTitle from "../../../hooks/useTitle";
-import { FaEnvelope, FaPhoneAlt, FaWhatsapp, FaMapMarkerAlt, FaTwitter, FaInstagram, FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
-import { ToastContainer, toast } from "react-toastify"; 
+import {
+  FaEnvelope,
+  FaPhoneAlt,
+  FaWhatsapp,
+  FaMapMarkerAlt,
+  FaTwitter,
+  FaInstagram,
+  FaFacebook,
+  FaLinkedin,
+  FaGithub,
+} from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const ContactUs = () => {
   useTitle("Contact Us");
 
-const handleSubmit = (e) => {
-   e.preventDefault();
-    toast.info("We are working on it 🚧",
-       { position: "top-center", 
-        autoClose: 1500,
-         hideProgressBar: false,
-          closeOnClick: true,
-           pauseOnHover: true,
-            draggable: true,
-             theme: "dark",
-             });
-            }
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    toast.info("We are working on it 🚧", {
+      position: "top-center",
+      autoClose: 1500,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      theme: "dark",
+    });
+  };
 
   return (
-    <div id="contactUs" className="min-h-screen bg-gradient-to-br from-[#0f172a] to-[#1e293b] flex items-center justify-center mt-16 py-16 px-6">
+    <div
+      id="contactUs"
+      className="min-h-screen bg-gradient-to-br from-[#0f172a] to-[#1e293b] flex items-center justify-center mt-16 py-16 px-6"
+    >
       <div className="max-w-6xl w-full grid md:grid-cols-2 gap-10 bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-10">
-        
         {/* Left Section - Contact Info */}
         <div className="space-y-6 text-white">
-          <h1 className="text-4xl font-bold mb-6 text-[#0ea5e9] uppercase">Get in Touch</h1>
+          <h1 className="text-4xl font-bold mb-6 text-[#0ea5e9] uppercase">
+            Get in Touch
+          </h1>
           <p className="text-lg font-montserrat mb-8">
-            We’d love to hear from you! Reach out through any of the channels below or send us a message directly.
+            We’d love to hear from you! Reach out through any of the channels
+            below or send us a message directly.
           </p>
 
           <div className="space-y-4">
             <div className="flex items-center gap-3">
               <FaEnvelope className="text-[#0ea5e9]" />
-              <span>tamzid620@gmiil.com</span>
+              <span>tamzid620@gmail.com</span>
             </div>
             <div className="flex items-center gap-3">
               <FaWhatsapp className="text-[#25D366]" />
@@ -45,23 +61,56 @@ const handleSubmit = (e) => {
             </div>
             <div className="flex items-center gap-3">
               <FaMapMarkerAlt className="text-[#ef4444]" />
-              <span>123 Main Street, City, State, Country</span>
+              <span>Ismail Society, Mohammadpur, Chattogram, Bangladesh</span>
             </div>
           </div>
 
           {/* Social Links */}
           <div className="flex gap-4 mt-6">
-            <a href="https://twitter.com/Tamzid_Monir" className="hover:text-[#0ea5e9]"><FaTwitter size={22} /></a>
-            <a href="https://www.instagram.com/Tamzid_Ull_Monir/" className="hover:text-pink-500"><FaInstagram size={22} /></a>
-            <a href="https://www.facebook.com/tamzid.ull.monir512" className="hover:text-blue-500"><FaFacebook size={22} /></a>
-            <a href="https://www.linkedin.com/in/tamzid-monir-96b163260/" className="hover:text-blue-400"><FaLinkedin size={22} /></a>
-            <a href="https://github.com/tamzid620" className="hover:text-gray-300"><FaGithub size={22} /></a>
+            {/* <Link
+              to="https://twitter.com/Tamzid_Monir"
+              target="_blank"
+              className="hover:text-[#0ea5e9]"
+            >
+              <FaTwitter size={22} />
+            </Link> */}
+
+            <Link
+              to="https://www.linkedin.com/in/tamzid-ull-monir-96b163260"
+              target="_blank"
+              className="hover:text-blue-400"
+            >
+              <FaLinkedin size={22} />
+            </Link>
+            <Link
+              to="https://github.com/tamzid620"
+              target="_blank"
+              className="hover:text-gray-300"
+            >
+              <FaGithub size={22} />
+            </Link>
+            <Link
+              to="https://www.facebook.com/tamzid.ull.monir512"
+              target="_blank"
+              className="hover:text-blue-500"
+            >
+              <FaFacebook size={22} />
+            </Link>
+            <Link
+              to="https://www.instagram.com/Tamzid_Ull_Monir/"
+              target="_blank"
+              className="hover:text-pink-500"
+            >
+              <FaInstagram size={22} />
+            </Link>
           </div>
         </div>
 
         {/* Right Section - Contact Form */}
         <div className="bg-white/5 rounded-xl p-8 shadow-lg">
-          <h2 className="text-2xl font-semibold text-[#0ea5e9] mb-6">Send a Message</h2>
+          <h2 className="text-2xl font-semibold text-[#0ea5e9] mb-6">
+            Send a Message
+          </h2>
           <form className="space-y-4">
             <input
               type="text"
@@ -87,7 +136,7 @@ const handleSubmit = (e) => {
           </form>
         </div>
       </div>
-         {/* Toast Container */}
+      {/* Toast Container */}
       <ToastContainer />
     </div>
   );

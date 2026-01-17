@@ -61,7 +61,7 @@ const Gallary = () => {
                 className="p-6 bg-gradient-to-b from-[#64748b]  hover:from-transparent hover:to-[#64748b] text-white font-semibold shadow-lg rounded-lg hover:shadow-xl transition duration-300 "
               >
                 <h3 className="text-xl font-semibold mb-2 uppercase">{feature.title}</h3>
-                <p className="text-white text-sm font-montserrat">{feature.description}</p>
+                <p className="text-para_color text-sm font-montserrat">{feature.description}</p>
               </div>
             ))}
           </div>
