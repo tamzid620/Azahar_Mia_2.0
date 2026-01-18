@@ -4,7 +4,6 @@ import {
   FaPhoneAlt,
   FaWhatsapp,
   FaMapMarkerAlt,
-  FaTwitter,
   FaInstagram,
   FaFacebook,
   FaLinkedin,
@@ -33,7 +32,7 @@ const ContactUs = () => {
   return (
     <div
       id="contactUs"
-      className="min-h-screen bg-gradient-to-br from-[#0f172a] to-[#1e293b] flex items-center justify-center mt-16 py-16 px-6"
+      className=" flex items-center justify-center mt-16 py-16 px-6"
     >
       <div className="max-w-6xl w-full grid md:grid-cols-2 gap-10 bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-10">
         {/* Left Section - Contact Info */}

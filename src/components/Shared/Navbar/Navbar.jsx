@@ -78,7 +78,7 @@ export default function Navbar() {
           <button
             onClick={() => setOpen((v) => !v)}
             aria-label="Toggle menu"
-            className="md:hidden inline-flex items-center justify-center rounded-md p-2 text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-800"
+            className="md:hidden inline-flex items-center justify-center rounded-md p-2 text-gray-200 hover:bg-gray-100 "
           >
             <svg
               className="h-6 w-6"
@@ -123,7 +123,7 @@ export default function Navbar() {
                   setOpen(false);
                 }
               }}
-              className="block rounded-md px-3 py-2 text-base font-semibold text-gray-800 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-800"
+              className="block rounded-md px-3 py-2 text-base font-semibold text-gray-200 text-center"
             >
               {link.name}
             </a>
@@ -132,7 +132,7 @@ export default function Navbar() {
           <a
             href="/details"
             onClick={() => setOpen(false)}
-            className="block rounded-md px-3 py-2  bg-gradient-to-r from-[#64748b] to-[#0ea5e9] text-white font-semibold  shadow-lg hover:from-[#0ea5e9] hover:to-[#64748b] transition duration-300"
+            className="block rounded-md px-3 py-2  bg-gradient-to-r from-[#64748b] to-[#0ea5e9] text-white font-semibold  shadow-lg hover:from-[#0ea5e9] hover:to-[#64748b] transition duration-300 text-center"
           >
             Get started
           </a>

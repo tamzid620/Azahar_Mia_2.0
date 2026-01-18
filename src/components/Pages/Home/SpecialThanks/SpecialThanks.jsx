@@ -2,7 +2,8 @@ import thanks from '../../../../../src/assets/icons/thank_you.jpg';
 
 const SpecialThanks = () => {
     return (
-        <div>
+      <div className='bg-gradient-to-br from-[#0f172a] to-[#1e293b] py-16'>
+        <div className='container mx-auto'>
              <h2 className="font-bold text-3xl uppercase flex justify-center mt-10 text-[#0ea5e9]">
         Special Thanks
       </h2>
@@ -12,6 +13,7 @@ const SpecialThanks = () => {
         </p>
       </div>
         </div>
+      </div>
     );
 };
 

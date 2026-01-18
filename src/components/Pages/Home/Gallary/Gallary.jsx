@@ -1,29 +1,5 @@
-import { useEffect, useState } from "react";
-import Swal from "sweetalert2";
 
 const Gallary = () => {
-  // const [likeCount, setLikeCount] = useState(158);
-  // const [isLiked, setIsLiked] = useState(false);
-  // const [views, setViews] = useState(0);
-
-  // useEffect(() => {
-  //   fetch("https://azahar-mia-family-tree.vercel.app/")
-  //     .then(res => res.json())
-  //     .then(data => setViews(data.value));
-  // }, []);
-
-  // const handleLikeClick = () => {
-  //   if (!isLiked) {
-  //     setLikeCount(likeCount + 1);
-  //     setIsLiked(true);
-  //     Swal.fire({
-  //       icon: "success",
-  //       title: "Add Like Successfully",
-  //       showConfirmButton: false,
-  //       timer: 1500,
-  //     });
-  //   }
-  // };
 
   return (
       <div>

@@ -1,0 +1,11 @@
+.connection-line::before {
+  content: "";
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  width: 2px;
+  height: 80px;
+  background-color: #ccc;
+  transform: translateX(-50%);
+  z-index: 0;
+}
